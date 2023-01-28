@@ -4,6 +4,7 @@ import { Search } from './SearchComponent/SearchComponent'
 import { useState } from 'react';
 import { FiltersComponent } from './FiltersComponent/FiltersComponent';
 import { OrderComponent } from './OrderComponent/OrderComponent';
+import { Itens } from './ItensComponent/ItensComponent';
 
 
 export function PageMenuFood() {
@@ -29,7 +30,7 @@ export function PageMenuFood() {
                     <FiltersComponent filter={filter} setFilter={setFilter} />
                     <OrderComponent order={order} setOrder={setOrder} />
                 </div>
-
+                <Itens />
 
             </section>
         </main>
