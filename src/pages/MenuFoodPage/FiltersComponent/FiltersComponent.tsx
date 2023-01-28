@@ -22,7 +22,7 @@ export function FiltersComponent({ setFilter, filter }: FiltersComponentProps) {
                     className={classNames({
                         [styles.filters__filter]: true,
                         // eslint-disable-next-line
-                        ['styles.filters__filter--active']: filter === option.id,
+                        [styles['filters__filter--active']]: filter === option.id,
                     })}
                     key={option.id} onClick={() => selectFilter(option)}>
                     {option.label}
